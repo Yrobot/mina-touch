@@ -1,4 +1,4 @@
-import YrobotTouch from "../../utils/YrobotTouch";
+import YrobotTouch from "../../utils/YrobotTouch"; //引入YrobotTouch
 
 Page({
     onLoad: function (options) {
