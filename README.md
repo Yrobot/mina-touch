@@ -12,6 +12,12 @@
 - 支持tap按  
 - 支持singleTap单击  
 
+## demo展示  
+1. demo1：监听 pressMove拖拽 手势  
+![](https://ws1.sinaimg.cn/large/d586f89bly1g0nnub7hlzg205k09wq8s.gif)  
+2. demo2: 监听 pinch缩放 和 rotate旋转 手势  
+![](https://ws1.sinaimg.cn/large/d586f89bly1g0nrjpavpng205k0bx481.gif)
+
 ## 使用方法  
 `tips: 整个仓库是一个demo，核心文件是'/utils/YrobotTouch.js'，只需下载此js文件即可`  
 
