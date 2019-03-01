@@ -1,14 +1,6 @@
 .box {
   position: relative;
-  width: 50%;
+  width: 300px;
   height: 100%;
   background-color: #70f085;
-}
-.box #target {
-  position: absolute;
-  width: 100rpx;
-  height: 100rpx;
-  background: #b69494;
-  left: 100rpx;
-  top: 100rpx;
 }

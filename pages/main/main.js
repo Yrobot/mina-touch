@@ -1,7 +1,11 @@
 import YrobotTouch from "../../utils/YrobotTouch"; //引入YrobotTouch
 
 Page({
+    data: {
+        translateX: 0,
+    },
     onLoad: function (options) {
+        const that = this;
         new YrobotTouch(this, 'touch1', { //会创建this.touch1指向实例对象
             touchStart: function () { },
             touchMove: function () { },
@@ -20,14 +24,24 @@ Page({
                 console.log('pinch:' + evt.zoom);
             },
             pressMove: function (evt) { //evt.deltaX和evt.deltaY代表在屏幕上移动的距离,evt.target可以用来判断点击的对象
-                console.log(evt.target);
+                // console.log(evt.target);
                 console.log(evt.deltaX);
-                console.log(evt.deltaY);
+                // console.log(evt.deltaY);
+                that.pressView(evt.deltaX);
             },
             swipe: function (evt) { //在touch结束触发，evt.direction代表滑动的方向 ['Up','Right','Down','Left']
-                console.log("swipe:" + evt.direction);
+                // console.log("swipe:" + evt.direction);
             }
         });
     },
+    pressView(deltaX) {
+        let translateX = this.data.translateX;
+        translateX -= deltaX;
+        if (translateX < 0) translateX = 0;
+        if (translateX > 200) translateX = 200;
+        this.setData({
+            translateX
+        })
+    }
 });
 
