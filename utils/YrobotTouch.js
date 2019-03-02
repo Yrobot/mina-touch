@@ -1,3 +1,19 @@
+var defaultOption = {
+    touchStart: function () { },
+    touchMove: function () { },
+    touchEnd: function () { },
+    touchCancel: function () { },
+    multipointStart: function () { },
+    multipointEnd: function () { },
+    tap: function () { },
+    doubleTap: function () { },
+    longTap: function () { },
+    singleTap: function () { },
+    rotate: function () { },
+    pinch: function () { },
+    pressMove: function () { },
+    swipe: function () { }
+}
 export default class YrobotTouch {
     constructor(pageOBJ, name, option = {}) {
         this.preV = { x: null, y: null };
@@ -18,7 +34,7 @@ export default class YrobotTouch {
         try {
             if (this._checkBeforeCreate(pageOBJ, name)) {
                 this._name = name
-                this._option = option
+                this._option = { ...defaultOption, ...option }
                 pageOBJ[name] = this
                 this._bindFunc(pageOBJ)
             }
