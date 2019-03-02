@@ -139,6 +139,7 @@ export default class YrobotTouch {
         if (!evt.changedTouches) return;
         this._cancelLongTap();
         let self = this;
+        evt.direction = this._swipeDirection(this.x1, this.x2, this.y1, this.y2); //在结束钩子都加入方向判断，但触发swipe瞬时必须位移大于30
         if (evt.touches.length < 2) {
             this._option.multipointEnd(evt);
         }
@@ -146,7 +147,7 @@ export default class YrobotTouch {
         //swipe
         if ((this.x2 && Math.abs(this.x1 - this.x2) > 30) ||
             (this.y2 && Math.abs(this.y1 - this.y2) > 30)) {
-            evt.direction = this._swipeDirection(this.x1, this.x2, this.y1, this.y2);
+            // evt.direction = this._swipeDirection(this.x1, this.x2, this.y1, this.y2);
             this.swipeTimeout = setTimeout(function () {
                 evt.type = "swipe";
                 self._option.swipe(evt);
