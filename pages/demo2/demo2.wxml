@@ -1,3 +1,3 @@
 <view class="background">
-    <view class="box" style="transform:rotate({{angle}}deg) scale({{zoom}});" bindtouchstart="touch1.start" bindtouchmove="touch1.move" bindtouchend="touch1.end" bindtouchcancel="touch1.cancel"></view>
+    <view class="box" style="transform:rotate({{angle}}deg) scale({{zoom}});" catchtouchstart="touch1.start" catchtouchmove="touch1.move" catchtouchend="touch1.end" catchtouchcancel="touch1.cancel"></view>
 </view>

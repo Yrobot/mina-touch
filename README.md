@@ -2,6 +2,9 @@
 `YrobotTouch`，一个方便、轻量的 __小程序__ 手势事件监听库  
 事件库部分逻辑参考`alloyFinger`，在此做出声明和感谢  
 
+## 更新时间轴：  
+1. 2019年3月10日 09:42:19  - 优化监听和绘制逻辑，动画不卡顿
+
 ## 支持的事件  
 - 支持pinch缩放  
 - 支持rotate旋转  
@@ -15,8 +18,8 @@
 ## demo展示  
 1. demo1：监听 pressMove拖拽 手势  
 ![](https://ws1.sinaimg.cn/large/d586f89bly1g0nnub7hlzg205k09wq8s.gif)  
-2. demo2: 监听 pinch缩放 和 rotate旋转 手势  
-![](https://ws1.sinaimg.cn/large/d586f89bly1g0nrjpavpng205k0bx481.gif)
+2. demo2: 监听 pinch缩放 和 rotate旋转 手势 (已优化动画卡顿bug)  
+![](https://ws1.sinaimg.cn/large/d586f89bly1g0xgbp58jbg205k0bx7dk.gif)
 
 ## 使用方法  
 `tips: 整个仓库是一个demo，核心文件是'/utils/YrobotTouch.js'，只需下载此js文件即可`  
@@ -29,6 +32,9 @@
 `new YrobotTouch(page实例,实例对象名,option)`  
 _实例对象名：影响到wxml引用的方法名，以及page页储存实例的索引_  
 _option：包含各个手势事件的出口函数，具体函数及解析如下参考_
+
+NOTE:  
+1. 多个事件监听触发setData时，建议把setData合并在touchMove中，以减少多个setData引起的动画延迟和卡顿（参考demo2）   
 
 参考：
 ```
@@ -75,9 +81,12 @@ touchend -> 实例对象名.end
 touchcancel -> 实例对象名.cancel   
 ```
 
+NOTE:  
+1. 建议使用catch捕获事件，否则易造成监听动画卡顿（参考demo2）  
+
 参考：（上例js中事例对象名为'touch1'）
 ```
-<view class="box" bindtouchstart="touch1.start" bindtouchmove="touch1.move" bindtouchend="touch1.end" bindtouchcancel="touch1.cancel">
+<view class="box" catchtouchstart="touch1.start" catchtouchmove="touch1.move" catchtouchend="touch1.end" catchtouchcancel="touch1.cancel">
     <view id="target"></view>
 </view>
 ```

@@ -1,5 +1,7 @@
 import YrobotTouch from "../../utils/YrobotTouch"; //引入YrobotTouch
 
+var angle = 0, zoom = 1;
+
 Page({
     data: {
         angle: 0,
@@ -9,7 +11,12 @@ Page({
         const that = this;
         new YrobotTouch(this, 'touch1', { //会创建this.touch1指向实例对象
             touchStart: function () { },
-            touchMove: function () { },
+            touchMove: function () {
+                that.setData({
+                    angle,
+                    zoom
+                })
+            },
             touchEnd: function () { },
             touchCancel: function () { },
             multipointStart: function (evt) { },//一个手指以上触摸屏幕触发
@@ -20,15 +27,11 @@ Page({
             singleTap: function () { }, //单击屏幕触发，包括长按
             rotate: function (evt) { //evt.angle代表两个手指旋转的角度
                 console.log(evt.angle)
-                that.setData({
-                    angle: that.data.angle + evt.angle
-                })
+                angle = that.data.angle + evt.angle;
             },
             pinch: function (evt) { //evt.scale代表两个手指缩放的比例
                 console.log('pinch:' + evt.zoom);
-                that.setData({
-                    zoom: that.data.zoom * evt.zoom < 1 ? 1 : that.data.zoom * evt.zoom
-                })
+                zoom = evt.zoom;
             },
             pressMove: function (evt) { //evt.deltaX和evt.deltaY代表在屏幕上移动的距离,evt.target可以用来判断点击的对象
                 // console.log(evt.target);
