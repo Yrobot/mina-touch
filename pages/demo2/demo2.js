@@ -29,7 +29,7 @@ Page({
                 console.log(evt.angle)
                 angle = that.data.angle + evt.angle;
             },
-            pinch: function (evt) { //evt.scale代表两个手指缩放的比例
+            pinch: function (evt) { //evt.zoom代表两个手指缩放的比例(多次缩放的累计值),evt.singleZoom代表单次回调中两个手指缩放的比例
                 console.log('pinch:' + evt.zoom);
                 zoom = evt.zoom;
             },

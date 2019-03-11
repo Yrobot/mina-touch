@@ -31,6 +31,9 @@ export default class YrobotTouch {
         this.x1 = this.x2 = this.y1 = this.y2 = null;
         this.preTapPosition = { x: null, y: null };
 
+        this.lastZoom = 1;
+        this.tempZoom = 1;
+
         try {
             if (this._checkBeforeCreate(pageOBJ, name)) {
                 this._name = name
@@ -103,7 +106,9 @@ export default class YrobotTouch {
 
             if (preV.x !== null) {
                 if (this.pinchStartLen > 0) {
-                    evt.zoom = getLen(v) / this.pinchStartLen;
+                    evt.singleZoom = getLen(v) / this.pinchStartLen;
+                    evt.zoom = evt.singleZoom * this.lastZoom;
+                    this.tempZoom = evt.zoom;
                     evt.type = "pinch";
                     this._option.pinch(evt);
                 }
@@ -141,6 +146,7 @@ export default class YrobotTouch {
         let self = this;
         evt.direction = this._swipeDirection(this.x1, this.x2, this.y1, this.y2); //在结束钩子都加入方向判断，但触发swipe瞬时必须位移大于30
         if (evt.touches.length < 2) {
+            this.lastZoom = this.tempZoom;
             this._option.multipointEnd(evt);
         }
         this._option.touchEnd(evt);
