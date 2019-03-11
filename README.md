@@ -56,7 +56,7 @@ Page({
             rotate: function (evt) { //evt.angle代表两个手指旋转的角度
                 console.log('rotate:' + evt.angle);
             },
-            pinch: function (evt) { //evt.scale代表两个手指缩放的比例
+            pinch: function (evt) { //evt.zoom代表两个手指缩放的比例(多次缩放的累计值),evt.singleZoom代表单次回调中两个手指缩放的比例
                 console.log('pinch:' + evt.zoom);
             },
             pressMove: function (evt) { //evt.deltaX和evt.deltaY代表在屏幕上移动的距离,evt.target可以用来判断点击的对象
