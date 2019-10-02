@@ -1,4 +1,4 @@
-# YrobotTouch-WXLP
+# YrobotTouch-MINA
 `YrobotTouch`，一个方便、轻量的 __小程序__ 手势事件监听库  
 事件库部分逻辑参考`alloyFinger`，在此做出声明和感谢  
 
