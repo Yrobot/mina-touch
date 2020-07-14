@@ -18,9 +18,9 @@
 
 ## demo展示  
 1. demo1：监听 pressMove拖拽 手势  
-![](https://ws1.sinaimg.cn/large/d586f89bly1g0nnub7hlzg205k09wq8s.gif)  
+![ ](https://mmbiz.qpic.cn/mmbiz_gif/Z3Bib6gP5N9ibSYjwVu2fc0T5MIklMmy9L5T1bMWzIibFemR3xCsSNOLWyiclzzNPkXFuk2PRyBNDpKdEWTu645ZWg/0?wx_fmt=gif)
 2. demo2: 监听 pinch缩放 和 rotate旋转 手势 (已优化动画卡顿bug)  
-![](https://ws1.sinaimg.cn/large/d586f89bly1g0xgbp58jbg205k0bx7dk.gif)
+![ ](https://mmbiz.qpic.cn/mmbiz_gif/Z3Bib6gP5N9ibSYjwVu2fc0T5MIklMmy9LdqfBrUTgmR9ic1AtO3ic9QwrnCEfTOsibsaRlCsg4wRpxv6pOhictjaExw/0?wx_fmt=gif)
 
 ## 使用方法  
 `tips: 整个仓库是一个demo，核心文件是'/utils/YrobotTouch.js'，只需下载此js文件即可`  
