@@ -1,10 +1,11 @@
-# YrobotTouch-MINA
-`YrobotTouch`，一个方便、轻量的 __小程序__ 手势事件监听库  
+# mina-touch
+`mina-touch`，一个方便、轻量的 __小程序__ 手势事件监听库  
 事件库部分逻辑参考`alloyFinger`，在此做出声明和感谢  
 
-## 更新时间轴：  
-1. 2019年3月10日 09:42:19  - 优化监听和绘制逻辑，动画不卡顿
-2. 2019年3月12日 09:51:04  - 修复第二次之后缩放闪烁的bug，pinch添加singleZoom参数
+## change log：  
+1. 2019.3.10 优化监听和绘制逻辑，动画不卡顿
+2. 2019.3.12 修复第二次之后缩放闪烁的bug，pinch添加singleZoom参数
+3. 2020.12.13 0.更名mina-touch 1上传npm库 2优化README 3优化使用方式
 
 ## 支持的事件  
 - 支持pinch缩放  
@@ -17,20 +18,21 @@
 - 支持singleTap单击  
 
 ## demo展示  
+
 1. demo1：监听 pressMove拖拽 手势  
 ![ ](https://mmbiz.qpic.cn/mmbiz_gif/Z3Bib6gP5N9ibSYjwVu2fc0T5MIklMmy9L5T1bMWzIibFemR3xCsSNOLWyiclzzNPkXFuk2PRyBNDpKdEWTu645ZWg/0?wx_fmt=gif)
 2. demo2: 监听 pinch缩放 和 rotate旋转 手势 (已优化动画卡顿bug)  
 ![ ](https://mmbiz.qpic.cn/mmbiz_gif/Z3Bib6gP5N9ibSYjwVu2fc0T5MIklMmy9LdqfBrUTgmR9ic1AtO3ic9QwrnCEfTOsibsaRlCsg4wRpxv6pOhictjaExw/0?wx_fmt=gif)
 
 ## 使用方法  
-`tips: 整个仓库是一个demo，核心文件是'/utils/YrobotTouch.js'，只需下载此js文件即可`  
+
 
 ### *.js  
-1. 引入YrobotTouch
-2. 在page的onload生命周期中实例化YrobotTouch  
+1. 引入mina-touch
+2. 在page的onload生命周期中实例化mina-touch  
 
 实例化语法：    
-`new YrobotTouch(page实例,实例对象名,option)`  
+`new mina-touch(page实例,监听实例对象名,option)`  
 _实例对象名：影响到wxml引用的方法名，以及page页储存实例的索引_  
 _option：包含各个手势事件的出口函数，具体函数及解析如下参考_
 
@@ -39,11 +41,11 @@ NOTE:
 
 参考：
 ```
-import YrobotTouch from "../../utils/YrobotTouch"; //引入YrobotTouch
+import MinaTouch from "mina-touch"; //引入mina-touch
 
 Page({
     onLoad: function (options) {
-        new YrobotTouch(this, 'touch1', { //会创建this.touch1指向实例对象
+        new MinaTouch(this, 'touch1', { //会创建this.touch1指向实例对象
             touchStart: function () { },
             touchMove: function () { },
             touchEnd: function () { },
@@ -93,8 +95,4 @@ NOTE:
 ```
 
 -----
-以上简单两步即可使用YrobotTouch手势库
-
-
-__Yrobot__  
-_2019年3月1日 01:55:24_
+以上简单两步即可使用mina-touch手势库

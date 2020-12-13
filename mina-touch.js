@@ -1,4 +1,4 @@
-var defaultOption = {
+const DEFAULT_OPTIONS = {
     touchStart: function () { },
     touchMove: function () { },
     touchEnd: function () { },
@@ -14,7 +14,7 @@ var defaultOption = {
     pressMove: function () { },
     swipe: function () { }
 }
-export default class YrobotTouch {
+export default class MinaTouch {
     constructor(pageOBJ, name, option = {}) {
         this.preV = { x: null, y: null };
         this.pinchStartLen = null;
@@ -37,7 +37,7 @@ export default class YrobotTouch {
         try {
             if (this._checkBeforeCreate(pageOBJ, name)) {
                 this._name = name
-                this._option = { ...defaultOption, ...option }
+                this._option = { ...DEFAULT_OPTIONS, ...option }
                 pageOBJ[name] = this
                 this._bindFunc(pageOBJ)
             }
@@ -47,12 +47,10 @@ export default class YrobotTouch {
     }
     _checkBeforeCreate(pageOBJ, name) {
         if (!pageOBJ || !name) {
-            throw new Error('YrobotTouch实例化时，必须传入page对象和引用名')
-            return false
+            throw new Error('MinaTouch实例化时，必须传入page对象和引用名')
         }
         if (pageOBJ[name]) {
-            throw new Error('YrobotTouch实例化error： ' + name + ' 已经存在page中')
-            return false
+            throw new Error('MinaTouch实例化error： ' + name + ' 已经存在page中')
         }
         return true
     }
