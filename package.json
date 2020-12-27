@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "一个轻量、方便的小程序手势事件监听库",
   "main": "mina-touch.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Yrobot/mina-touch.git"

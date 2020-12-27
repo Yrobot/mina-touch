@@ -15,7 +15,7 @@ const DEFAULT_OPTIONS = {
     swipe: function () { }
 }
 export default class MinaTouch {
-    constructor(pageOBJ, name, option = {}) {
+    constructor(_page, name, option = {}) {
         this.preV = { x: null, y: null };
         this.pinchStartLen = null;
         this.scale = 1;
@@ -35,29 +35,29 @@ export default class MinaTouch {
         this.tempZoom = 1;
 
         try {
-            if (this._checkBeforeCreate(pageOBJ, name)) {
+            if (this._checkBeforeCreate(_page, name)) {
                 this._name = name
                 this._option = { ...DEFAULT_OPTIONS, ...option }
-                pageOBJ[name] = this
-                this._bindFunc(pageOBJ)
+                _page[name] = this
+                this._bindFunc(_page)
             }
         } catch (error) {
             console.error(error)
         }
     }
-    _checkBeforeCreate(pageOBJ, name) {
-        if (!pageOBJ || !name) {
+    _checkBeforeCreate(_page, name) {
+        if (!_page || !name) {
             throw new Error('MinaTouch实例化时，必须传入page对象和引用名')
         }
-        if (pageOBJ[name]) {
+        if (_page[name]) {
             throw new Error('MinaTouch实例化error： ' + name + ' 已经存在page中')
         }
         return true
     }
-    _bindFunc(pageOBJ) {
+    _bindFunc(_page) {
         let funcNames = ['start', 'move', 'end', 'cancel']
         for (let funcName of funcNames)
-            pageOBJ[this._name + '.' + funcName] = this[funcName].bind(this)
+            _page[this._name + '.' + funcName] = this[funcName].bind(this)
     }
     start(evt) {
         if (!evt.touches) return;
