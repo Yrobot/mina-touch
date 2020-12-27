@@ -23,21 +23,21 @@
 
 ## demo 展示
 
-1. demo1：监听 pressMove 拖拽 手势  
-   <img src="https://636f-could-test-1258393788.tcb.qcloud.la/README/touchmove.gif" style="height:960px;width:448px;zoom:0.3;" />
-   <img src="https://636f-could-test-1258393788.tcb.qcloud.la/QRCode/pages-mina-touch-demo1-index_qrcode%3D1.jpg" style="height:200px;width:200px;margin-left:50px;" />
+1. demo1：监听 pressMove 拖拽 手势
+   | ![](https://636f-could-test-1258393788.tcb.qcloud.la/README/touchmove.gif) | ![](https://636f-could-test-1258393788.tcb.qcloud.la/QRCode/pages-mina-touch-demo1-index_qrcode%3D1.jpg) |
+   | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
 
 2. demo2: 监听 pinch 缩放 和 rotate 旋转 手势 (已优化动画卡顿 bug)  
-   <img src="https://636f-could-test-1258393788.tcb.qcloud.la/README/multipleTouch.gif" style="height:960px;width:448px;zoom:0.3;" />
-   <img src="https://636f-could-test-1258393788.tcb.qcloud.la/QRCode/pages-mina-touch-demo2-index_qrcode%3D1.jpg" style="height:200px;width:200px;margin-left:50px;" />
+   | ![](https://636f-could-test-1258393788.tcb.qcloud.la/README/multipleTouch.gif?sign=d0eea6eea6bfb92b4b7f0e32d6c4ffb8&t=1609054476) | ![](https://636f-could-test-1258393788.tcb.qcloud.la/QRCode/pages-mina-touch-demo2-index_qrcode%3D1.jpg) |
+   | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
 
 3. demo3: 测试监听双击事件  
-   <img src="https://636f-could-test-1258393788.tcb.qcloud.la/README/doubleTap.gif" style="height:960px;width:448px;zoom:0.3;" />
-   <img src="https://636f-could-test-1258393788.tcb.qcloud.la/QRCode/pages-mina-touch-demo3-index_qrcode%3D1.jpg" style="height:200px;width:200px;margin-left:50px;" />
+   | ![](https://636f-could-test-1258393788.tcb.qcloud.la/README/doubleTap.gif) | ![](https://636f-could-test-1258393788.tcb.qcloud.la/QRCode/pages-mina-touch-demo3-index_qrcode%3D1.jpg) |
+   | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
 
 4. demo4: 测试监听长按事件  
-   <img src="https://636f-could-test-1258393788.tcb.qcloud.la/README/longTap.gif" style="height:960px;width:448px;zoom:0.3;" />
-   <img src="https://636f-could-test-1258393788.tcb.qcloud.la/QRCode/pages-mina-touch-demo4-index_qrcode%3D1.jpg" style="height:200px;width:200px;margin-left:50px;" />
+   | ![](https://636f-could-test-1258393788.tcb.qcloud.la/README/longTap.gif) | ![](https://636f-could-test-1258393788.tcb.qcloud.la/QRCode/pages-mina-touch-demo4-index_qrcode%3D1.jpg) |
+   | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
 
 ## 使用方法
 
