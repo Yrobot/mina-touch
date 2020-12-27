@@ -1,6 +1,6 @@
 {
   "name": "mina-touch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "一个轻量、方便的小程序手势事件监听库",
   "main": "mina-touch.js",
   "scripts": {},
