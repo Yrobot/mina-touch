@@ -1,5 +1,7 @@
 # mina-touch
 
+![](https://track.yrobot.top/ga-beacon/UA-190592680-2/mina-touch/readme?flat)
+
 `mina-touch`，一个方便、轻量的 **小程序** 手势事件监听库  
 事件库部分逻辑参考`alloyFinger`，在此做出声明和感谢
 
