@@ -23,22 +23,26 @@
 - 支持 tap 按
 - 支持 singleTap 单击
 
+## 扫码体验
+
+<img width='300' src='https://gitee.com/yrobot/images/raw/master/2021-06-24/fBg7hr-16-39-33.jpg'/>
+
 ## demo 展示
 
 1. demo1：监听 pressMove 拖拽 手势
-   | ![](https://636f-could-test-1258393788.tcb.qcloud.la/README/touchmove.gif) | ![](https://636f-could-test-1258393788.tcb.qcloud.la/QRCode/pages-mina-touch-demo1-index_qrcode%3D1.jpg) |
+   | <img width='200' src='https://gitee.com/yrobot/images/raw/master/2021-06-24/swap-17-28-54.gif'/> | <img width='200' src='https://gitee.com/yrobot/images/raw/master/2021-06-24/qRjJuI-17-33-33.jpg'/> |
    | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
 
 2. demo2: 监听 pinch 缩放 和 rotate 旋转 手势 (已优化动画卡顿 bug)  
-   | ![](https://636f-could-test-1258393788.tcb.qcloud.la/README/multipleTouch.gif?sign=d0eea6eea6bfb92b4b7f0e32d6c4ffb8&t=1609054476) | ![](https://636f-could-test-1258393788.tcb.qcloud.la/QRCode/pages-mina-touch-demo2-index_qrcode%3D1.jpg) |
+   | <img width='200' src='https://gitee.com/yrobot/images/raw/master/2021-06-24/mutiple-17-30-33.gif'/> | <img width='200' src='https://gitee.com/yrobot/images/raw/master/2021-06-24/8HKlqd-17-34-05.jpg'/> |
    | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
 
 3. demo3: 测试监听双击事件  
-   | ![](https://636f-could-test-1258393788.tcb.qcloud.la/README/doubleTap.gif) | ![](https://636f-could-test-1258393788.tcb.qcloud.la/QRCode/pages-mina-touch-demo3-index_qrcode%3D1.jpg) |
+   | <img width='200' src='https://gitee.com/yrobot/images/raw/master/2021-06-24/doubleTap-17-30-51.gif'/> | <img width='200' src='https://gitee.com/yrobot/images/raw/master/2021-06-24/magRXj-17-34-27.jpg'/> |
    | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
 
 4. demo4: 测试监听长按事件  
-   | ![](https://636f-could-test-1258393788.tcb.qcloud.la/README/longTap.gif) | ![](https://636f-could-test-1258393788.tcb.qcloud.la/QRCode/pages-mina-touch-demo4-index_qrcode%3D1.jpg) |
+   | <img width='200' src='https://gitee.com/yrobot/images/raw/master/2021-06-24/longTap-17-31-00.gif'/> | <img width='200' src='https://gitee.com/yrobot/images/raw/master/2021-06-24/CYFfVr-17-34-50.jpg'/> |
    | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
 
 ## 使用方法
