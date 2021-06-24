@@ -29,21 +29,25 @@
 
 ## demo 展示
 
-1. demo1：监听 pressMove 拖拽 手势
+1. demo1：监听 pressMove 拖拽 手势 [查看 demo 代码](https://github.com/Yrobot/mina-tools-client/tree/master/miniprogram/pages/mina-touch/demo1)  
    | <img width='200' src='https://gitee.com/yrobot/images/raw/master/2021-06-24/swap-17-28-54.gif'/> | <img width='200' src='https://gitee.com/yrobot/images/raw/master/2021-06-24/qRjJuI-17-33-33.jpg'/> |
    | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
 
-2. demo2: 监听 pinch 缩放 和 rotate 旋转 手势 (已优化动画卡顿 bug)  
+2. demo2: 监听 pinch 缩放 和 rotate 旋转 手势 (已优化动画卡顿 bug) [查看 demo 代码](https://github.com/Yrobot/mina-tools-client/tree/master/miniprogram/pages/mina-touch/demo2)  
    | <img width='200' src='https://gitee.com/yrobot/images/raw/master/2021-06-24/mutiple-17-30-33.gif'/> | <img width='200' src='https://gitee.com/yrobot/images/raw/master/2021-06-24/8HKlqd-17-34-05.jpg'/> |
    | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
 
-3. demo3: 测试监听双击事件  
+3. demo3: 测试监听双击事件 [查看 demo 代码](https://github.com/Yrobot/mina-tools-client/tree/master/miniprogram/pages/mina-touch/demo3)  
    | <img width='200' src='https://gitee.com/yrobot/images/raw/master/2021-06-24/doubleTap-17-30-51.gif'/> | <img width='200' src='https://gitee.com/yrobot/images/raw/master/2021-06-24/magRXj-17-34-27.jpg'/> |
    | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
 
-4. demo4: 测试监听长按事件  
+4. demo4: 测试监听长按事件 [查看 demo 代码](https://github.com/Yrobot/mina-tools-client/tree/master/miniprogram/pages/mina-touch/demo4)  
    | <img width='200' src='https://gitee.com/yrobot/images/raw/master/2021-06-24/longTap-17-31-00.gif'/> | <img width='200' src='https://gitee.com/yrobot/images/raw/master/2021-06-24/CYFfVr-17-34-50.jpg'/> |
    | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+
+## demo 代码
+
+demo 代码地址 [mina-tools-client/mina-touch](https://github.com/Yrobot/mina-tools-client/tree/master/miniprogram/pages/mina-touch)
 
 ## 使用方法
 
